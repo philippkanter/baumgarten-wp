@@ -15,7 +15,7 @@
 
 <body <?php body_class(); ?>>
 
-<nav class="navbar navbar-expand-md navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
   <div class="container-responsive">
 
     <a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a>
@@ -31,19 +31,39 @@
           'container'       => false,
           'menu_class'      => '',
           'fallback_cb'     => '__return_false',
-          'items_wrap'      => '<ul id="%1$s" class="navbar-nav mr-auto mt-2 mt-lg-0 %2$s">%3$s</ul>',
+          'items_wrap'      => '<ul id="%1$s" class="navbar-nav ml-auto mt-2 mt-lg-0 %2$s">%3$s</ul>',
           'depth'           => 2,
           'walker'          => new b4st_walker_nav_menu()
         ) );
       ?>
 
-      <form class="form-inline ml-auto pt-2 pt-md-0" role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-        <input class="form-control mr-sm-1" type="text" value="<?php echo get_search_query(); ?>" placeholder="Search..." name="s" id="s">
-        <button type="submit" id="searchsubmit" value="<?php esc_attr_x('Search', 'b4st') ?>" class="btn btn-outline-secondary my-2 my-sm-0">
+      <!-- <form class="form-inline ml-auto pt-2 pt-md-0" role="search" method="get" id="searchform" action="<?php //echo esc_url( home_url( '/' ) ); ?>">
+        <input class="form-control mr-sm-1" type="text" value="<?php //echo get_search_query(); ?>" placeholder="Search..." name="s" id="s">
+        <button type="submit" id="searchsubmit" value="<?php //esc_attr_x('Search', 'b4st') ?>" class="btn btn-outline-secondary my-2 my-sm-0">
           <i class="fas fa-search"></i>
         </button>
-      </form>
+      </form> -->
     </div>
 
   </div>
 </nav>
+
+<header class="masthead text-center text-white d-flex">
+  <div class="container my-auto">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h1 class="text-uppercase">
+          <strong><?php bloginfo('name'); ?></strong>
+        </h1>
+        <hr>
+      </div>
+      <div class="col-lg-9 mx-auto">
+        <p class="mb-5">Liebe Gäste,
+          wir freuen uns sehr über ihren zahlreichen Besuch.<br>
+          Bis bald zu einem leckeren hausgemachten Stück Torte oder Kuchen und köstlichen Kaffee<br>
+          Ihr Team vom Café Alte Schule Baumgarten</p>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#cafealteschule">Weiterlesen</a>
+      </div>
+    </div>
+  </div>
+</header>

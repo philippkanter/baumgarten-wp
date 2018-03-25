@@ -1,0 +1,54 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/theme/css"
+        },
+        {
+            "extensionName": ".min.css",
+            "format": "compressed",
+            "savePath": "/theme/css"
+        }
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**",
+        "**/vendor/**"
+    ],
+    "deploy.reloaded": {
+        "packages": [
+            {
+                "name": "befour@baumgarten",
+
+                "button": {
+                    "text": "Deploy",
+                    "tooltip": "Click here to deploy to baumgarten",
+
+                    "targets": [ "baumgarten" ]
+                },
+                
+                "deployOnSave": [ "baumgarten" ],
+                "deployOnChange": [ "baumgarten" ],
+
+                "files": [
+                    "**/*.css",
+                    "**/*.js",
+                    "**/*.php",
+                    "**/*.css.map",
+                ]
+            }
+        ],
+        "targets": [
+            {
+                "type": "sftp",
+                "name": "baumgarten",
+                "description": "wordpress",
+
+                "dir": "/home/alteschu/public_html/wordpress/wp-content/themes/befour",
+                "host": "alteschulebaumgarten.de", "port": 22,
+                "user": "alteschu", "password": "qGpY16b6s8",
+            },
+        ],
+    },
+}

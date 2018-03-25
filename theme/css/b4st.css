@@ -2,6 +2,8 @@
  * b4st CSS
  */
 
+ @import url('creative.min.css');
+
 .site-header-image {
 	display: block;
 	margin: auto;

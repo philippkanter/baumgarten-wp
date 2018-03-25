@@ -1,0 +1,10 @@
+// Styling for the services section
+.service-box {
+  max-width: 400px;
+}
+
+#gmap {
+  background-image: url('https://maps.googleapis.com/maps/api/staticmap?center=Café%20Alte%20Schule%20Baumgarten,%20Poststraße,%20Baumgarten&zoom=11&scale=2&size=1920x1080&maptype=roadmap&key=AIzaSyBY7_eurv_KoD1lrGW8iuRIKWV4z8SDKyM&format=png&visual_refresh=true');
+    background-position: center center; 
+    @include background-cover;
+}
