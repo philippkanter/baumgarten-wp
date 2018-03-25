@@ -6,7 +6,7 @@ header.masthead {
   overflow: hidden;
   &::before {
     background-image: url('../img/garten.jpg');
-    background-position: center 20%; 
+    background-position: center top; 
     @include background-cover;
     @include blur(1px);
     content: '';

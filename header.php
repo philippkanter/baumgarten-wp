@@ -18,7 +18,19 @@
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
   <div class="container-responsive">
 
-    <a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a>
+    <a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>">
+      <?php  
+        if ( function_exists( 'the_custom_logo' ) ) {
+          $custom_logo_id = get_theme_mod( 'custom_logo' );
+          $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+          if ( has_custom_logo() ) {
+                  echo '<img src="'. esc_url( $logo[0] ) .'">';
+          } else {
+                  echo get_bloginfo( 'name' );
+          }
+        }
+      ?>
+    </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -47,23 +59,3 @@
 
   </div>
 </nav>
-
-<header class="masthead text-center text-white d-flex">
-  <div class="container my-auto">
-    <div class="row">
-      <div class="col-lg-10 mx-auto">
-        <h1 class="text-uppercase">
-          <strong><?php bloginfo('name'); ?></strong>
-        </h1>
-        <hr>
-      </div>
-      <div class="col-lg-9 mx-auto">
-        <p class="mb-5">Liebe Gäste,
-          wir freuen uns sehr über ihren zahlreichen Besuch.<br>
-          Bis bald zu einem leckeren hausgemachten Stück Torte oder Kuchen und köstlichen Kaffee<br>
-          Ihr Team vom Café Alte Schule Baumgarten</p>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#cafealteschule">Weiterlesen</a>
-      </div>
-    </div>
-  </div>
-</header>

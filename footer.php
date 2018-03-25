@@ -1,4 +1,4 @@
-<footer class="mt-5 bg-light">
+<footer class="bg-light">
 
   <div class="container-responsive">
 

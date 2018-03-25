@@ -30,12 +30,18 @@
                 
                 "deployOnSave": [ "baumgarten" ],
                 "deployOnChange": [ "baumgarten" ],
+                "fastCheckOnChange": true,
+                "fastCheckOnSave": true,
 
                 "files": [
                     "**/*.css",
+                    "**/*.scss",
+                    "**/*.css.map",
                     "**/*.js",
                     "**/*.php",
-                    "**/*.css.map",
+                    "**/*.img",
+                    // "theme/css/*.css",
+                    // "theme/css/*.css.map",
                 ]
             }
         ],

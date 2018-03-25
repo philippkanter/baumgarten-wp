@@ -2,20 +2,10 @@
  * b4st CSS
  */
 
- @import url('creative.min.css');
-
 .site-header-image {
 	display: block;
 	margin: auto;
 }
-
-.wp-caption {}
-.wp-caption-text {}
-.sticky {}
-.screen-reader-text {}
-.gallery-caption {}
-
-.bypostauthor {}
 
 .alignleft {
 	float: left;

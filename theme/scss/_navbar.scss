@@ -3,7 +3,15 @@
   border-bottom: 1px solid fade-out($gray-900, .9);
   background-color: $white;
   @include sans-serif-font;
-  @include transition-all;
+  @include transition(all .5s);
+  &::after {
+    content: '';
+    border-bottom: 2px solid #a4c03e;
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+  }
   .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;
@@ -12,6 +20,12 @@
     &:focus,
     &:hover {
       color: darken($primary, .1);
+    }
+    img {
+      width: auto;
+      margin-bottom: -14px;
+      margin-top: -12px;
+      max-height: 60px;
     }
   }
   .navbar-nav {
@@ -37,7 +51,8 @@
   }
   @media (min-width: 992px) {
     border-color: transparent;
-    background-color: fade-out($primary, .4);
+    // background-image:linear-gradient(to right,rgb(249, 221, 215) 0%, rgba(240,95,64,0.6) 50%);
+    // background-color: fade-out($primary, .4);
     .navbar-brand {
       color: fade-out($white, .3);
       &:focus,
@@ -48,15 +63,16 @@
     .navbar-nav > li.nav-item > a.nav-link {
       padding: 0.5rem 1rem;
     }
-    .navbar-nav > li.nav-item > a.nav-link,
-    .navbar-nav > li.nav-item > a.nav-link:focus {
-      color: fade-out($white, .3);
-      &:hover {
-        color: $white;
-      }
-    }
+    // .navbar-nav > li.nav-item > a.nav-link,
+    // .navbar-nav > li.nav-item > a.nav-link:focus {
+    //   color: fade-out($white, .3);
+    //   &:hover {
+    //     color: $white;
+    //   }
+    // }
     &.navbar-shrink {
       border-bottom: 1px solid fade-out($gray-900, .9);
+      background-image: none;
       background-color: $white;
       .navbar-brand {
         color: $primary;
