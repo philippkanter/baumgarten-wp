@@ -6,7 +6,7 @@
   @include transition(all .5s);
   &::after {
     content: '';
-    border-bottom: 2px solid #a4c03e;
+    border-bottom: 2px solid $tertiary;
     width: 100%;
     position: absolute;
     bottom: -1px;

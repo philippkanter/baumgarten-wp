@@ -183,8 +183,8 @@ header.masthead {
   overflow: hidden;
 }
 
-header.masthead::before {
-  background-image: url("../img/garten.jpg");
+header.masthead .featured-background {
+  background-color: #a4c03e;
   background-position: center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -196,7 +196,6 @@ header.masthead::before {
   -ms-filter: blur(1px);
   -o-filter: blur(1px);
   filter: blur(1px);
-  content: '';
   width: 100%;
   position: absolute;
   -webkit-transform: scale(1.04, 1.02);
@@ -232,7 +231,7 @@ header.masthead p {
     padding-top: 56px;
     padding-bottom: 56px;
   }
-  header.masthead::before {
+  header.masthead .featured-background {
     height: calc(100% - 56px);
   }
 }
@@ -244,7 +243,7 @@ header.masthead p {
     padding-top: 0;
     padding-bottom: 0;
   }
-  header.masthead::before {
+  header.masthead .featured-background {
     min-height: 650px;
     height: 100%;
   }

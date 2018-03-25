@@ -15,6 +15,8 @@
   <?php if(have_posts()): while(have_posts()): the_post(); ?>
     <article role="article" id="post_<?php the_ID()?>" <?php post_class()?>>
       <header class="masthead text-center text-white d-flex">
+        <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+        <div class="featured-background" style="min-height: 650px; height: 100%; filter: blur(1px); width: 100%; position: absolute;background-image: url('<?php echo $thumb['0'];?>');"></div>
         <div class="container my-auto">
           <div class="row">
             <div class="col-lg-10 mx-auto">

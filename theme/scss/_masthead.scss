@@ -4,12 +4,11 @@ header.masthead {
   padding-bottom: calc(10rem - 56px);
   position: relative;
   overflow: hidden;
-  &::before {
-    background-image: url('../img/garten.jpg');
+  .featured-background {
+    background-color: $tertiary;
     background-position: center top; 
     @include background-cover;
     @include blur(1px);
-    content: '';
     width: 100%;
     position: absolute;
     @include scale(1.04, 1.02);
@@ -31,7 +30,7 @@ header.masthead {
     }
   }
   @media (max-width: 991px) {
-    &::before {
+    .featured-background {
       height: calc(100% - 56px);
     }
     height: 100%;
@@ -39,7 +38,7 @@ header.masthead {
     padding-bottom: 56px;
   }
   @media (min-width: 992px) {
-    &::before {
+    .featured-background {
       min-height: 650px;
       height: 100%;
     }
