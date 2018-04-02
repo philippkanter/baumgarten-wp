@@ -13,7 +13,7 @@ if (
 ?>
 <?php get_header(); ?>
 
-<div class="container-responsive mt-5">
+<div class="container mt-5">
   <div class="row">
 
     <div class="col-sm">
@@ -39,6 +39,6 @@ if (
   </div>
   <!-- /.row -->
 </div>
-<!-- /.container-responsive -->
+<!-- /.container -->
 
 <?php get_footer(); ?>

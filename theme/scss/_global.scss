@@ -57,6 +57,14 @@ section {
   margin-top: 0;
 }
 
+.container.full-width{
+  max-width: unset;
+  width: 100vw;
+  left: 50%;
+  position: relative;
+  @include translate(-50%, 0);
+}
+
 ::-moz-selection {
   color: $white;
   background: $gray-900;

@@ -4,6 +4,7 @@ header.masthead {
   padding-bottom: calc(10rem - 56px);
   position: relative;
   overflow: hidden;
+  min-height: 650px;
   .featured-background {
     background-color: $tertiary;
     background-position: center top; 
@@ -11,7 +12,8 @@ header.masthead {
     @include blur(1px);
     width: 100%;
     position: absolute;
-    @include scale(1.04, 1.02);
+    background-attachment: fixed;
+    // @include scale(1.04, 1.02);
     z-index: 0;
   }
   hr {
@@ -39,11 +41,9 @@ header.masthead {
   }
   @media (min-width: 992px) {
     .featured-background {
-      min-height: 650px;
       height: 100%;
     }
     height: 100vh;
-    min-height: 650px;
     padding-top: 0;
     padding-bottom: 0;
     h1 {
