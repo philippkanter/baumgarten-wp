@@ -11,7 +11,7 @@ if ( ! function_exists('b4st_enqueues') ) {
 		wp_register_style('bootstrap-css', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css', false, '4.0.0', null);
 		wp_enqueue_style('bootstrap-css');
 
-		wp_register_style('creative-css', get_template_directory_uri() . '/theme/css/creative.min.css', array(), filemtime( plugin_dir_path( __FILE__ ) .  'assets/css/plugin-styles.css' ) );
+		wp_register_style('creative-css', get_template_directory_uri() . '/theme/css/creative.min.css', false, '1.0.2', null);
 		wp_enqueue_style('creative-css');
 
 		// Scripts
