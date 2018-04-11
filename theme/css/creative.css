@@ -349,6 +349,12 @@ img::-moz-selection {
   z-index: 0;
 }
 
+@media (min-width: 992px) {
+  .featured-background {
+    height: 100%;
+  }
+}
+
 .featured-background.front-page {
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
@@ -361,12 +367,6 @@ img::-moz-selection {
   background-attachment: fixed;
 }
 
-@media (min-width: 992px) {
-  .featured-background.front-page {
-    height: 100%;
-  }
-}
-
 @media (max-width: 991px) {
   .featured-background.front-page {
     height: calc(100% - 56px);
@@ -375,7 +375,6 @@ img::-moz-selection {
 
 .featured-background.sub-page {
   margin: 0 -15px;
-  height: 170px;
 }
 
 .wpcf7-acceptance {
