@@ -17,6 +17,8 @@
   -ms-filter: blur($radius);
   -o-filter: blur($radius);
   filter: blur($radius);
+}
+@mixin blur-performance-fix() {
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
   -webkit-transform: translate3d(0,0,0);

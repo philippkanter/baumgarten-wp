@@ -279,7 +279,7 @@ img::-moz-selection {
   }
 }
 
-header.masthead {
+.home header {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   position: relative;
@@ -287,7 +287,51 @@ header.masthead {
   min-height: 650px;
 }
 
-header.masthead .featured-background {
+.home header hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.home header h1 {
+  font-size: 2rem;
+}
+
+.home header p {
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .home header p {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .home header {
+    height: 100%;
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+
+@media (min-width: 992px) {
+  .home header {
+    height: 100vh;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .home header h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home header h1 {
+    font-size: 4rem;
+  }
+}
+
+.featured-background {
   background-color: #a4c03e;
   background-position: center top;
   -webkit-background-size: cover;
@@ -300,6 +344,12 @@ header.masthead .featured-background {
   -ms-filter: blur(1px);
   -o-filter: blur(1px);
   filter: blur(1px);
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.featured-background.front-page {
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
   -webkit-transform: translate3d(0, 0, 0);
@@ -308,60 +358,24 @@ header.masthead .featured-background {
   perspective: 1000;
   transform: translate3d(0, 0, 0);
   transform: translateZ(0);
-  width: 100%;
-  position: absolute;
   background-attachment: fixed;
-  z-index: 0;
 }
 
-header.masthead hr {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-header.masthead h1 {
-  font-size: 2rem;
-}
-
-header.masthead p {
-  font-weight: 300;
-}
-
-@media (min-width: 768px) {
-  header.masthead p {
-    font-size: 1.15rem;
+@media (min-width: 992px) {
+  .featured-background.front-page {
+    height: 100%;
   }
 }
 
 @media (max-width: 991px) {
-  header.masthead {
-    height: 100%;
-    padding-top: 56px;
-    padding-bottom: 56px;
-  }
-  header.masthead .featured-background {
+  .featured-background.front-page {
     height: calc(100% - 56px);
   }
 }
 
-@media (min-width: 992px) {
-  header.masthead {
-    height: 100vh;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  header.masthead .featured-background {
-    height: 100%;
-  }
-  header.masthead h1 {
-    font-size: 3rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  header.masthead h1 {
-    font-size: 4rem;
-  }
+.featured-background.sub-page {
+  margin: 0 -15px;
+  height: 170px;
 }
 
 .wpcf7-acceptance {
