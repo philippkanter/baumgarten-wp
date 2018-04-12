@@ -333,7 +333,6 @@ img::-moz-selection {
 
 .featured-background {
   background-color: #a4c03e;
-  background-position: center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
@@ -345,14 +344,9 @@ img::-moz-selection {
   -o-filter: blur(1px);
   filter: blur(1px);
   width: 100%;
+  height: 100%;
   position: absolute;
   z-index: 0;
-}
-
-@media (min-width: 992px) {
-  .featured-background {
-    height: 100%;
-  }
 }
 
 .featured-background.front-page {
@@ -365,6 +359,7 @@ img::-moz-selection {
   transform: translate3d(0, 0, 0);
   transform: translateZ(0);
   background-attachment: fixed;
+  background-position: center top;
 }
 
 @media (max-width: 991px) {
@@ -375,6 +370,11 @@ img::-moz-selection {
 
 .featured-background.sub-page {
   margin: 0 -15px;
+  background-position: center;
+}
+
+header.border-bottom {
+  width: 3px;
 }
 
 .wpcf7-acceptance {
@@ -383,6 +383,10 @@ img::-moz-selection {
 
 .text-primary {
   color: #F05F40 !important;
+}
+
+.border-3 {
+  border-width: 3px !important;
 }
 
 .btn {

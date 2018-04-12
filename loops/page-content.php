@@ -9,15 +9,15 @@
     <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
     <div class="container full-width text-white">
     <div class="featured-background sub-page" style="background-image: url('<?php echo $thumb['0'];?>');"></div>
-      <div class="container h-100 my-auto">
+      <div class="container h-100 my-auto py-5">
         <div class="row h-100">
-          <header class="col-sm my-auto border-bottom">
+          <header class="col my-auto border-bottom border-3">
             <h1><?php the_title()?></h1>
           </header>
         </div>
       </div>
     </div>
-    <main>
+    <main class="my-5">
       <?php the_content()?>
       <?php wp_link_pages(); ?>
     </main>

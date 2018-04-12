@@ -1,25 +1,30 @@
 // Styling for the featured-image
 .featured-background {
   background-color: $tertiary;
-  background-position: center top; 
   @include background-cover;
   @include blur(1px);
   width: 100%;
-  @media (min-width: 992px) {
-    height: 100%;
-  }
+  height: 100%;
   position: absolute;
   // @include scale(1.04, 1.02);
   z-index: 0;
   &.front-page {
     @include blur-performance-fix;
     background-attachment: fixed;
+    background-position: center top; 
     @media (max-width: 991px) {
       height: calc(100% - 56px);
     }
   }
   &.sub-page {
     margin: 0 -15px;
+    background-position: center;
+  }
+}
+// Styling for the head-section
+header {
+  &.border-bottom {
+    width: 3px;
   }
 }
 

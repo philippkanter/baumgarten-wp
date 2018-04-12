@@ -1,6 +1,6 @@
 # b4st – A Bootstrap 4 Starter Theme, for WordPress
 
-*Version 2.0-beta2*
+*Version 2.0*
 
 [https://github.com/SimonPadbury/b4st](https://github.com/SimonPadbury/b4st)
 
@@ -8,11 +8,7 @@
 
 **b4st is a simple WordPress starter theme loaded with Bootstrap 4.**
 
-> **NOTE:**
-
-> When 2.0 is launched, this project will remain stable and mostly unchanged (except for bug fixes.) Until that time, there may yet be a few 'breaking' changes.
-
-> Although b4st was originally intended as a simple starter theme (hence the name b4st), several people wanted child theme capability so with v2.0-beta I have made functions 'pluggable'. (It can still be used as a starter theme.)
+Although b4st was originally intended as a simple starter theme (hence the name b4st), several people wanted child theme capability so with v2.0-beta I have made functions 'pluggable'. (It can still be used as a starter theme.)
 
 ## Features of b4st
 
@@ -20,13 +16,13 @@
 
 * Theme CSS and JS, functions and loops are organized into different folders.
 
-* **Bootstrap 4.0.0** (served by cdnjs.com CDN) CSS and JS enqueued.
+* **Bootstrap 4.1.0** (served by cdnjs.com CDN) CSS and JS enqueued.
 
-* **Popper 1.12.9** (served by cdnjs.com CDN) JS enqueued. Popper is needed by Bootstrap popovers, tooltips and collapsed navbar "hamburger" action.
+* **Popper 1.14.0** (served by cdnjs.com CDN) JS enqueued. Popper is needed by Bootstrap popovers, tooltips and collapsed navbar "hamburger" action.
 
 * **jQuery 3.3.1** enqueued, (served by cdnjs.com CDN),
 
-* **Font Awesome 5.0.4** (JS served by use.fontawesome.com CDN) enqueued. CSS pseudo elements enabled by a tiny config JS.
+* **Font Awesome 5.0.10** (JS served by use.fontawesome.com CDN) enqueued. CSS pseudo elements enabled by a tiny config JS.
 
 * **Modernizr 2.8.3** (served by cdnjs.com CDN) enqueued.
 
@@ -66,7 +62,23 @@ If you want want to see something in `b4st` and you can do it yourself, please f
 
 ---
 
-## Maybe you would also be interested in [Atomic Boot Pug](https://github.com/SimonPadbury/Atomic-Boot-Pug)
+## Looking for something more powerful? Try [Progenitor](https://github.com/Progenitor-Theme/)
+
+Project: https://github.com/Progenitor-Theme/progenitor. 
+
+Progenitor started as b4st but it has been developed to become somemething totally different. Progenitor is intended as a parent theme with pluggable functions, and hooks everywhere:
+
+* **Build hooks** – so child themes can override or remove Progenitor components
+* **Action hooks** – so child themes can add more comonents
+* **CSS class hooks** – so child themes can change the Bootstrap classes used by Progenitor, and add more classes
+
+Bootstrap 4. Font Awesome 5. WooCommerce ready. Multilingual support will be included -- please help by adding your language.
+
+Start your Progenitor projects from the *projenitor-child-starter* – https://github.com/Progenitor-Theme/progenitor-child-starter.
+
+---
+
+## Looking for a website Style Guide starter, building upon Bootstrap 4? Try [Atomic Boot Pug](https://github.com/SimonPadbury/Atomic-Boot-Pug)
 
 Inspired by Brad Frost's [Atomic Design](http://atomicdesign.bradfrost.com/), Atomic Boot Pug is comprised of a set of Bootstrap 4 docs demo snippets (tranformed into [Pug](https://pugjs.org/api/getting-started.html) mixins) reorganized into a starter styleguide.
 

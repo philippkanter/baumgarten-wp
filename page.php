@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <?php if ( !is_front_page() ) : ?> <!-- Standardseite -->
-  <div class="container mb-5">
+  <div class="container">
     <div class="row">
       <div class="col-sm" style="margin-top: 60px;">
         <div id="content" role="main">
