@@ -10,7 +10,6 @@
   z-index: 0;
   &.front-page {
     @include blur-performance-fix;
-    background-attachment: fixed;
     background-position: center top; 
     @media (max-width: 991px) {
       height: calc(100% - 56px);

@@ -15,7 +15,10 @@
     <article role="article" id="post_<?php the_ID()?>" <?php post_class()?>>
       <header class="text-center text-white d-flex">
         <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-        <div class="featured-background front-page" style="background-image: url('<?php echo $thumb['0'];?>');"></div>
+        <div 
+          class="featured-background front-page" 
+          style="background:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.4)),url('<?php echo $thumb['0'];?>');">
+        </div>
         <div class="container my-auto">
           <div class="row">
             <div class="col-lg-10 mx-auto">
