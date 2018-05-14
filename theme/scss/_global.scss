@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  @include serif-font;
+  @include sans-serif-font;
 }
 
 hr {
@@ -35,7 +35,7 @@ h3,
 h4,
 h5,
 h6 {
-  @include sans-serif-font;
+  @include serif-font;
 }
 
 .bg-primary {

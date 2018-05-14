@@ -1,17 +1,14 @@
 // theme default CSS
+@import url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css');
 @import "_b4st.scss";
 // Google Font
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans');
 // custom CSS
-@import "_variables.scss";
 @import "_mixins.scss";
+@import "_variables.scss";
 @import "_global.scss";
-@import "_navbar.scss";
-@import "_home.scss";
-@import "_pages.scss";
-@import "_shortcodes.scss";
-@import "_contact-form.scss";
 @import "_bootstrap-overrides.scss";
-// unused
-// @import "_services.scss";
-// @import "_portfolio.scss";
+// rte special
+body#tinymce {
+    padding: 10px !important;
+  }

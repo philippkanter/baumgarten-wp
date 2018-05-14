@@ -99,7 +99,7 @@ html {
 }
 
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 hr {
@@ -129,7 +129,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .bg-primary {
@@ -209,6 +209,7 @@ img::-moz-selection {
   font-weight: 700;
   text-transform: uppercase;
   color: #F05F40;
+  height: 88px;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -218,9 +219,7 @@ img::-moz-selection {
 
 #mainNav .navbar-brand img {
   width: auto;
-  margin-bottom: -14px;
-  margin-top: -12px;
-  max-height: 60px;
+  max-height: 93px;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
@@ -376,6 +375,18 @@ img::-moz-selection {
 
 header.border-bottom {
   width: 3px;
+}
+
+.card {
+  -webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background-color: rgba(164, 192, 62, 0.9);
 }
 
 .wpcf7-acceptance {

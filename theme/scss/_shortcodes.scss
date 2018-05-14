@@ -1,0 +1,8 @@
+// Styling for custom-shortcode-clases
+.card {
+    @include card-shadow();
+}
+
+body {
+    background-color: fade-out($tertiary, .1);
+  }

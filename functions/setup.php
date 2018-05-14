@@ -5,7 +5,7 @@
 
 if ( ! function_exists('b4st_setup') ) {
 	function b4st_setup() {
-		add_editor_style('theme/css/editor-style.css');
+		add_editor_style('theme/css/editor-style.min.css');
 
 		add_theme_support('title-tag');
 

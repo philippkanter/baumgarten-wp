@@ -11,6 +11,13 @@
   -o-background-size: cover;
   background-size: cover;
 }
+@mixin card-shadow() {
+  -webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+}
 @mixin blur($radius) {
   -webkit-filter: blur($radius);
   -moz-filter: blur($radius);

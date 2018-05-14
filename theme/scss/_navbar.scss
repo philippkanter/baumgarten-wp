@@ -16,6 +16,7 @@
     font-weight: 700;
     text-transform: uppercase;
     color: $primary;
+    height: 88px;
     @include sans-serif-font;
     &:focus,
     &:hover {
@@ -23,9 +24,9 @@
     }
     img {
       width: auto;
-      margin-bottom: -14px;
-      margin-top: -12px;
-      max-height: 60px;
+      // margin-bottom: -14px;
+      // margin-top: -12px;
+      max-height: 93px;
     }
   }
   .navbar-nav {
