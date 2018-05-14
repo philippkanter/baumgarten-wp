@@ -25,5 +25,13 @@ header {
   &.border-bottom {
     width: 3px;
   }
+  h1 {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    line-height: 0px;
+    height: 0;
+    font-size: 0;
+  }
 }
 
