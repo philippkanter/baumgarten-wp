@@ -1,4 +1,8 @@
 // Mixins
+@mixin darken($brightness) {
+  -webkit-filter: brightness($brightness);
+  filter: brightness($brightness);
+}
 @mixin transition-all() {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;

@@ -4,5 +4,16 @@
 }
 
 body {
-    background-color: fade-out($tertiary, .1);
+    background-color: fade-out($tertiary, .4);
   }
+.text-on-image-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+img[featured-image] {
+    @include darken(50%);
+    min-height: 250px;
+    object-fit: cover;
+}
