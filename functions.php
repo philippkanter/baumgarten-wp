@@ -13,3 +13,5 @@ require get_template_directory() . '/functions/index-pagination.php';
 require get_template_directory() . '/functions/single-split-pagination.php';
 require get_template_directory() . '/functions/custom-logo.php';
 require get_template_directory() . '/functions/featured-image.php';
+require get_template_directory() . '/functions/rte-styles.php';
+require get_template_directory() . '/functions/wp-bootstrap-gallery.php';

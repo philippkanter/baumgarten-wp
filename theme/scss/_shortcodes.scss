@@ -2,7 +2,9 @@
 .card {
     @include card-shadow();
 }
-
+.card-link {
+    margin: 1.5rem 0;
+}
 body {
     background-color: fade-out($tertiary, .4);
   }
@@ -16,4 +18,10 @@ img[featured-image] {
     @include darken(50%);
     min-height: 250px;
     object-fit: cover;
+}
+.gallery img {
+    border-radius: .5rem;
+}
+.row.gallery > div {
+    margin-bottom: 30px !important;
 }
