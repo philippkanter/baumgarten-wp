@@ -6,7 +6,7 @@ Used by index.php, category.php and author.php
 */
 ?>
 
-<article class="mb-5" role="article" id="post_<?php the_ID()?>" <?php post_class(); ?> >
+<article role="article" id="post_<?php the_ID()?>" <?php post_class("mb-5"); ?> >
   <header>
     <h2>
       <a href="<?php the_permalink(); ?>">
@@ -19,7 +19,7 @@ Used by index.php, category.php and author.php
       <i class="far fa-comment"></i>&nbsp;<a href="<?php comments_link(); ?>"><?php printf( _nx( 'One Comment', '%1$s Comments', get_comments_number(), '', 'b4st' ), number_format_i18n( get_comments_number() ) ); ?></a>
     </p>
   </header>
-  <main>
+  <div>
     <?php the_post_thumbnail(); ?>
 
     <?php if ( has_excerpt( $post->ID ) ) {
@@ -30,5 +30,5 @@ Used by index.php, category.php and author.php
   	<?php } else {
   	 the_content( __( '&hellip; ' . __('Continue reading', 'b4st' ) . ' <i class="fas fa-arrow-right"></i>', 'b4st' ) );
 	} ?>
-  </main>
+  </div>
 </article>

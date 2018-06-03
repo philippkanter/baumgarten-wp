@@ -13,7 +13,7 @@ if (
 ?>
 <?php get_header(); ?>
 
-<div class="container mt-5">
+<main class="container-responsive mt-5">
   <div class="row">
 
     <div class="col-sm">
@@ -30,15 +30,12 @@ if (
         <?php else: ?>
           <?php get_template_part('loops/index-none'); ?>
         <?php endif; ?>
-
       </div><!-- /#content -->
     </div>
 
     <?php get_sidebar(); ?>
 
-  </div>
-  <!-- /.row -->
-</div>
-<!-- /.container -->
+  </div><!-- /.row -->
+</main><!-- /.container-responsive -->
 
 <?php get_footer(); ?>

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <?php if ( !is_front_page() ) : ?> <!-- Standardseite -->
-  <div class="container">
+  <main class="container-responsive">
     <div class="row">
       <div class="col-sm" style="margin-top: 60px;">
         <div id="content" role="main">
@@ -8,7 +8,7 @@
         </div><!-- /#content -->
       </div>
     </div><!-- /.row -->
-  </div><!-- /.container -->
+  </main><!-- /.container -->
 <?php endif; ?>
 <?php if ( is_front_page() ) : ?><!-- Startseite -->
   <?php if(have_posts()): while(have_posts()): the_post(); ?>
@@ -19,7 +19,7 @@
           class="featured-background front-page" 
           style="background:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.4)),url('<?php echo $thumb['0'];?>');">
         </div>
-        <div class="container my-auto">
+        <main class="container-responsive my-auto">
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <h1 class="text-uppercase">
@@ -34,7 +34,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </main>
       </header>
     </article>
   <?php endwhile; else: wp_redirect(esc_url( home_url() ) . '/404', 404); exit; endif; ?>
