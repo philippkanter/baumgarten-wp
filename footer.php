@@ -8,9 +8,20 @@
     </div>
     <?php endif; ?>
 
-    <div class="row pt-3">
-      <div class="col">
-        <p class="text-center">&copy; <?php echo date('Y'); ?> <a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a> | <a href="./impressum">Impressum</a></p>
+    <div class="row py-3">
+      <div class="col text-center">
+        &copy;&nbsp;<?php echo date('Y'); ?>&nbsp;<a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a>
+        <?php
+          wp_nav_menu( array(
+            'theme_location'  => 'footer-navbar',
+            'container'       => false,
+            'menu_class'      => '',
+            'fallback_cb'     => '__return_false',
+            'items_wrap'      => '<span id="%1$s" class="footer-links %2$s">%3$s</span>',
+            'depth'           => 2,
+            'walker'          => new Nav_Footer_Walker()
+          ) );
+        ?>
       </div>
     </div>
 

@@ -1,7 +1,18 @@
 /**!
  * b4st CSS
  */
+/* Sticky Footer */
 @import url("https://fonts.googleapis.com/css?family=Merriweather|Open+Sans");
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
 .site-header-image {
   display: block;
   margin: auto;
@@ -90,6 +101,7 @@ textarea:focus::-moz-placeholder {
   margin-top: 1rem;
 }
 
+/* Site footer */
 body,
 html {
   width: 100%;
@@ -129,7 +141,6 @@ h4,
 h5,
 h6 {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
-  margin-bottom: 1.5rem;
 }
 
 .kicker {
@@ -375,6 +386,14 @@ img::-moz-selection {
   margin: 0;
 }
 
+#menu-footer a:before {
+  content: '| ';
+  color: #000;
+  cursor: default;
+  display: inline-block;
+  margin-right: 0.2rem;
+}
+
 .card {
   -webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
@@ -403,6 +422,8 @@ img[featured-image] {
   filter: brightness(50%);
   min-height: 250px;
   object-fit: cover;
+  width: 100%;
+  max-height: 500px;
 }
 
 .gallery img {
@@ -449,5 +470,9 @@ img[featured-image] {
 
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+li p.card-text:last-child {
+  margin-bottom: initial;
 }
 /*# sourceMappingURL=creative.css.map */

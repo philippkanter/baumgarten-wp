@@ -8,3 +8,10 @@
 #sub-page h1{
   margin: 0;
 }
+#menu-footer a:before {
+  content: '| ';
+  color: $black;
+  cursor: default;
+  display: inline-block;
+  margin-right: 0.2rem;
+}

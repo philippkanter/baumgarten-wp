@@ -15,3 +15,4 @@ require get_template_directory() . '/functions/custom-logo.php';
 require get_template_directory() . '/functions/featured-image.php';
 require get_template_directory() . '/functions/rte-styles.php';
 require get_template_directory() . '/functions/wp-bootstrap-gallery.php';
+require get_template_directory() . '/functions/custom-nav-walker.php';
