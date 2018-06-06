@@ -17,9 +17,9 @@
         <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
         <div 
           class="featured-background front-page" 
-          style="background:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.4)),url('<?php echo $thumb['0'];?>');">
+          style="background:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.4)),url('<?php echo $thumb['0'];?>');background-size:cover;">
         </div>
-        <main class="container-responsive my-auto">
+        <main class="container my-auto">
           <div class="row">
             <div class="col-lg-10 mx-auto">
               <h1 class="text-uppercase">

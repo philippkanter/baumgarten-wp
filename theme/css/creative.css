@@ -299,11 +299,6 @@ img::-moz-selection {
 
 .featured-background {
   background-color: #a4c03e;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   -webkit-filter: blur(1px);
   -moz-filter: blur(1px);
   -ms-filter: blur(1px);
@@ -316,18 +311,15 @@ img::-moz-selection {
   background-position: center top;
 }
 
-@media (max-width: 991px) {
-  .featured-background {
-    height: calc(100% - 56px);
-  }
-}
-
 .home header {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 56px);
   position: relative;
   overflow: hidden;
-  min-height: 650px;
+  margin-top: 105px;
+}
+
+.home header main {
+  padding-top: 65px;
+  padding-bottom: 68px;
 }
 
 .home header hr {
@@ -344,25 +336,15 @@ img::-moz-selection {
 }
 
 @media (min-width: 768px) {
+  .home header {
+    height: calc(100vh - 130px);
+  }
   .home header p {
     font-size: 1.15rem;
   }
 }
 
-@media (max-width: 991px) {
-  .home header {
-    height: 100%;
-    padding-top: 56px;
-    padding-bottom: 56px;
-  }
-}
-
 @media (min-width: 992px) {
-  .home header {
-    height: 100vh;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
   .home header h1 {
     font-size: 3rem;
   }
