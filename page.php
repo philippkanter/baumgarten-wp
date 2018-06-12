@@ -12,7 +12,7 @@
 <?php endif; ?>
 <?php if ( is_front_page() ) : ?><!-- Startseite -->
   <?php if(have_posts()): while(have_posts()): the_post(); ?>
-    <article role="article" id="post_<?php the_ID()?>" <?php post_class()?>>
+    <article id="post_<?php the_ID()?>" <?php post_class()?>>
       <header class="text-center text-white d-flex">
         <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
         <div 

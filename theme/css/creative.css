@@ -399,7 +399,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-img[featured-image] {
+img.featured-image {
   -webkit-filter: brightness(50%);
   filter: brightness(50%);
   min-height: 250px;
