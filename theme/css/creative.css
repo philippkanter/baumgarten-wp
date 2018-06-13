@@ -2,7 +2,6 @@
  * b4st CSS
  */
 /* Sticky Footer */
-@import url("https://fonts.googleapis.com/css?family=Merriweather|Open+Sans");
 body {
   display: flex;
   min-height: 100vh;
@@ -102,6 +101,28 @@ textarea:focus::-moz-placeholder {
 }
 
 /* Site footer */
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v15-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/open-sans-v15-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/open-sans-v15-latin-regular.woff2") format("woff2"), url("../fonts/open-sans-v15-latin-regular.woff") format("woff"), url("../fonts/open-sans-v15-latin-regular.ttf") format("truetype"), url("../fonts/open-sans-v15-latin-regular.svg#OpenSans") format("svg");
+  /* Legacy iOS */
+}
+
+/* merriweather-regular - latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/merriweather-v19-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Merriweather Regular"), local("Merriweather-Regular"), url("../fonts/merriweather-v19-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-v19-latin-regular.woff2") format("woff2"), url("../fonts/merriweather-v19-latin-regular.woff") format("woff"), url("../fonts/merriweather-v19-latin-regular.ttf") format("truetype"), url("../fonts/merriweather-v19-latin-regular.svg#Merriweather") format("svg");
+  /* Legacy iOS */
+}
+
 body,
 html {
   width: 100%;

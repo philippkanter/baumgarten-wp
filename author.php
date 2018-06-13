@@ -13,7 +13,7 @@ if (
 ?>
 <?php get_header(); ?>
 
-<main class="container-responsive mt-5">
+<main class="container-fluid mt-5">
   <div class="row">
 
     <div class="col-sm">

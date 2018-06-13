@@ -1,8 +1,8 @@
 // theme default CSS
-@import url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css');
+@import url('../vendor/bootstrap/css/bootstrap.min.css');
 @import "_b4st.scss";
 // Google Font
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans');
+@import "_fonts.scss";
 // custom CSS
 @import "_mixins.scss";
 @import "_variables.scss";

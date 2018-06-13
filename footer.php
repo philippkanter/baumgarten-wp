@@ -1,6 +1,6 @@
 <footer class="bg-light">
 
-  <div class="container">
+  <div class="container-fluid">
 
     <?php if(is_active_sidebar('footer-widget-area')): ?>
     <div class="row border-bottom pt-5 pb-4" id="footer" role="navigation">

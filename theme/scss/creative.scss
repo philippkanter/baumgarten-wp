@@ -1,7 +1,7 @@
 // theme default CSS
 @import "_b4st.scss";
-// Google Font
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans');
+// Google Font from local
+@import "_fonts.scss";
 // custom CSS
 @import "_variables.scss";
 @import "_mixins.scss";
@@ -13,5 +13,3 @@
 @import "_contact-form.scss";
 @import "_bootstrap-overrides.scss";
 // unused
-// @import "_services.scss";
-// @import "_portfolio.scss";
