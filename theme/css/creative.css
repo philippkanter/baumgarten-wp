@@ -192,14 +192,7 @@ section {
 
 .container.full-width {
   max-width: unset;
-  width: 100vw;
-  left: 50%;
   position: relative;
-  -webkit-transform: translate(-50%, 0);
-  -moz-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  -o-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
 }
 
 ::-moz-selection {
@@ -359,6 +352,7 @@ img::-moz-selection {
 @media (min-width: 768px) {
   .home header {
     height: calc(100vh - 130px);
+    min-height: 600px;
   }
   .home header p {
     font-size: 1.15rem;

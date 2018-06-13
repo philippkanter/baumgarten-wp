@@ -2,7 +2,7 @@
 <?php if ( !is_front_page() ) : ?> <!-- Standardseite -->
   <main class="container-fluid">
     <div class="row">
-      <div class="col-sm" style="margin-top: 60px;">
+      <div class="col px-0" style="margin-top: 60px;">
         <div id="content" role="main">
           <?php get_template_part('loops/page-content'); ?>
         </div><!-- /#content -->

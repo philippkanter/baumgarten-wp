@@ -193,14 +193,7 @@ section {
 
 .container.full-width {
   max-width: unset;
-  width: 100vw;
-  left: 50%;
   position: relative;
-  -webkit-transform: translate(-50%, 0);
-  -moz-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  -o-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
 }
 
 ::-moz-selection {

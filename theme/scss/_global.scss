@@ -66,10 +66,7 @@ section {
 
 .container.full-width{
   max-width: unset;
-  width: 100vw;
-  left: 50%;
   position: relative;
-  @include translate(-50%, 0);
 }
 
 ::-moz-selection {
