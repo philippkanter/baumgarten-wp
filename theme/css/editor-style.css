@@ -171,6 +171,11 @@ h6 {
   color: #6c757d;
 }
 
+.icon-prefix {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
 .bg-primary {
   background-color: #F05F40 !important;
 }

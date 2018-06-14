@@ -29,6 +29,13 @@ function my_mce_before_init_insert_formats( $init_array ) {
                 'wrapper' => true,
                  
             ),  
+            array(  
+                'title' => 'Icon',  
+                'block' => 'span',  
+                'classes' => 'icon-prefix',
+                'wrapper' => true,
+                 
+            ),  
             // array(  
             //     'title' => 'Blue Button',  
             //     'block' => 'span',  
