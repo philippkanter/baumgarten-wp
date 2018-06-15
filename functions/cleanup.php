@@ -73,12 +73,12 @@ function my_remove_recent_comments_style() {
 	remove_action( 'wp_head', array( $wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style'  ) );
 }
 
-function remove_jquery( &$scripts) {
-	if(!is_admin()) {
-		$scripts->remove('jquery');
-	}
-}
-add_action( 'wp_default_scripts', 'remove_jquery' );
+// function remove_jquery( &$scripts) {
+// 	if(!is_admin()) {
+// 		$scripts->remove('jquery');
+// 	}
+// }
+// add_action( 'wp_default_scripts', 'remove_jquery' );
 
 /**
  * Disable embeds

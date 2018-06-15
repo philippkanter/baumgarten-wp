@@ -19,6 +19,18 @@
   <meta name="application-name" content="Alte Schule">
   <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="theme-color" content="#ffffff">
+
+  <?php
+    if ( is_page( $page = '9' ) ) :
+      if ( function_exists( 'wpcf7_enqueue_scripts' ) ) {
+          wpcf7_enqueue_scripts();
+      }
+      if ( function_exists( 'wpcf7_enqueue_styles' ) ) {
+          wpcf7_enqueue_styles();
+      }
+    endif;
+  ?>
+
   <?php wp_head(); ?>
 </head>
 

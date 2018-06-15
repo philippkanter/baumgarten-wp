@@ -26,3 +26,6 @@ function js_defer_attr($tag) {
 	return str_replace( ' src', ' defer src', $tag );
 }
 add_filter( 'script_loader_tag', 'js_defer_attr', 10);
+
+add_filter( 'wpcf7_load_js', '__return_false' );
+add_filter( 'wpcf7_load_css', '__return_false' );
