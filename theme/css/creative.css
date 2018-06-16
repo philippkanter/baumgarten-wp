@@ -170,11 +170,6 @@ h6 {
   color: #6c757d;
 }
 
-.icon-prefix {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
 .bg-primary {
   background-color: #be1522 !important;
 }
@@ -396,16 +391,17 @@ img::-moz-selection {
   margin-right: 0.2rem;
 }
 
+.icon-prefix {
+  font-size: 2.5rem;
+  font-weight: light;
+}
+
 .card {
   -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   -ms-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   -o-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-}
-
-.card-link {
-  margin: 1.5rem 0;
 }
 
 body {
@@ -436,6 +432,31 @@ img.featured-image {
   margin-bottom: 30px !important;
 }
 
+/* Set width to make card deck cards 100% width */
+@media (max-width: 575px) {
+  .card-deck {
+    display: block;
+  }
+  .card-link {
+    display: block;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1023px) {
+  .card-deck {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .card-link + .card-link {
+    margin-left: 0;
+  }
+  .card-link {
+    display: block;
+  }
+}
+
 .wpcf7-acceptance {
   display: inline-block;
 }
@@ -454,27 +475,58 @@ img.featured-image {
   border: none;
   border-radius: 300px;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  border-radius: .25rem;
 }
 
 .btn-xl {
   padding: 1rem 2rem;
 }
 
+.btn-secondary {
+  background-color: transparent;
+  color: #be1522;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+  background-color: rgba(190, 21, 34, 0.1);
+  color: #be1522;
+}
+
 .btn-primary {
   background-color: #be1522;
   border-color: #be1522;
+  -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  -ms-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  -o-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  -webkit-transition: -webkit-box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+.btn-primary:hover, .btn-primary:focus {
   color: #fff;
   background-color: #a7121e !important;
+  -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  -ms-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  -o-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
-.btn-primary:active, .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+.btn-primary:active {
+  -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  -ms-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  -o-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
 
 li p.card-text:last-child,
+.card-body .row,
 ul ul {
   margin-bottom: 1rem;
 }

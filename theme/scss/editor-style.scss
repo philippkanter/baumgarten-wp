@@ -10,5 +10,9 @@
 @import "_bootstrap-overrides.scss";
 // rte special
 body#tinymce {
-    padding: 10px !important;
-  }
+  padding: 10px !important;
+}
+.icon-prefix {
+  font-size: 1rem;
+  font-weight: light;
+}

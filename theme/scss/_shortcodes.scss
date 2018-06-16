@@ -1,9 +1,6 @@
 // Styling for custom-shortcode-clases
 .card {
-    @include card-shadow();
-}
-.card-link {
-    margin: 1.5rem 0;
+    @include shadow();
 }
 body {
     background-color: fade-out($tertiary, .4);
@@ -27,3 +24,30 @@ img.featured-image {
 .row.gallery > div {
     margin-bottom: 30px !important;
 }
+/* Set width to make card deck cards 100% width */
+@media (max-width: 575px) { 
+	.card-deck {
+	    display: block;
+    }
+    .card-link {
+        display: block;
+    }
+}
+@media (min-width: 576px) and (max-width: 1023px) {
+	.card-deck {
+	    display: block;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+    .card-link+.card-link {
+        margin-left: 0;
+    }
+    .card-link {
+        display: block;
+    }
+}
+// @media (min-width: 1400px) { 
+//     .card-link+.card-link {
+//         margin-left: 0;
+//     }
+// }

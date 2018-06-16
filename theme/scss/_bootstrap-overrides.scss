@@ -13,27 +13,41 @@
   border: none;
   border-radius: 300px;
   @include sans-serif-font;
+  border-radius: .25rem;
 }
 
 .btn-xl {
   padding: 1rem 2rem;
 }
 
-.btn-primary {
-  background-color: $primary;
-  border-color: $primary;
+.btn-secondary {
+  background-color: transparent;
+  color: $primary;
   &:hover,
   &:focus,
   &:active {
+    background-color: fade-out($primary, .9);
+    color: $primary;
+  }
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  @include shadow();
+  @include shadow-transition();
+  &:hover,
+  &:focus {
     color: $white;
     background-color: darken($primary, 5%) !important;
+    @include shadow-hover();
   }
-  &:active,
-  &:focus {
-    box-shadow: 0 0 0 0.2rem rgba(240, 95, 64,.5) !important;
+  &:active {
+    @include shadow-active();
   }
 }
 li p.card-text:last-child,
+.card-body .row,
 ul ul {
   margin-bottom: 1rem;
 }

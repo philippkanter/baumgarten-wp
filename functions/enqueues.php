@@ -56,3 +56,10 @@ add_filter('script_loader_tag', 'myplugin_remove_type_attr', 10, 2);
 function myplugin_remove_type_attr($tag, $handle) {
     return preg_replace( "/type=['\"]text\/(javascript|css)['\"]/", '', $tag );
 }
+
+function fixfaissue_scripts() {
+	if ( !isset( $wp_customize ) ) {
+	  wp_add_inline_script('fix-fontawesome', 'FontAwesomeConfig = { searchPseudoElements: true }', 'before');
+	}
+  }
+  add_action('wp_enqueue_scripts', 'fixfaissue_scripts');
