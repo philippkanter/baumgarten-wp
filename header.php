@@ -53,11 +53,15 @@
       ?>
     </a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="sr-only">Toggle navigation</span>
+      <!-- <span class="menutext">Menü</span> -->
+      <span class="icon-bar top-bar"></span>
+      <span class="icon-bar middle-bar"></span>
+      <span class="icon-bar bottom-bar"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarDropdown">
+    <div class="text-right collapse navbar-collapse" id="navbarDropdown">
       <?php
         wp_nav_menu( array(
           'theme_location'  => 'navbar',

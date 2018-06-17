@@ -3,7 +3,7 @@
   border-bottom: 1px solid fade-out($gray-900, .9);
   background-color: $white;
   @include sans-serif-font;
-  @include transition(all .5s);
+  @include transition(all 0.5s linear);
   &::after {
     content: '';
     border-bottom: 2px solid $tertiary;

@@ -26,6 +26,9 @@ img.featured-image {
 }
 /* Set width to make card deck cards 100% width */
 @media (max-width: 575px) { 
+    .card-link+.card-link {
+        margin-left: 0;
+    }
 	.card-deck {
 	    display: block;
     }
@@ -46,8 +49,3 @@ img.featured-image {
         display: block;
     }
 }
-// @media (min-width: 1400px) { 
-//     .card-link+.card-link {
-//         margin-left: 0;
-//     }
-// }

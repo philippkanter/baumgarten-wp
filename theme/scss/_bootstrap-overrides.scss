@@ -14,20 +14,29 @@
   border-radius: 300px;
   @include sans-serif-font;
   border-radius: .25rem;
-}
-
-.btn-xl {
-  padding: 1rem 2rem;
+  padding: 0.75rem 1rem;
 }
 
 .btn-secondary {
   background-color: transparent;
+  border: 1px solid $primary;
   color: $primary;
   &:hover,
-  &:focus,
-  &:active {
-    background-color: fade-out($primary, .9);
+  &:focus{
+    background-color: fade-out($primary, .9) !important;
     color: $primary;
+    border: 1px solid $primary !important;
+    @include shadow-none();
+  }
+  &:active {
+    background-color: fade-out($primary, .9) !important;
+    color: $primary;
+    border: 1px solid $primary !important;
+    &:focus {
+      background-color: fade-out($primary, .7) !important;
+      color: $primary !important;
+      @include shadow-inset();
+    }
   }
 }
 
@@ -43,7 +52,12 @@
     @include shadow-hover();
   }
   &:active {
+    background-color: darken($primary, 10%) !important;
+    border-color: darken($primary, 10%) !important;;
     @include shadow-active();
+    &:focus {
+      @include shadow-none();
+    }
   }
 }
 li p.card-text:last-child,
