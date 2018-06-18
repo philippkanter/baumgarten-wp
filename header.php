@@ -36,8 +36,8 @@
 
 <body <?php body_class(); ?>>
 
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-  <div class="container">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top px-3" id="mainNav">
+  <div class="container px-0 px-sm-3">
 
     <a class="navbar-brand" href="<?php echo esc_url( home_url('/') ); ?>">
       <?php  
@@ -53,7 +53,7 @@
       ?>
     </a>
 
-    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler px-0 collapsed" type="button" data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="sr-only">Toggle navigation</span>
       <!-- <span class="menutext">Menü</span> -->
       <span class="icon-bar top-bar"></span>
@@ -61,7 +61,7 @@
       <span class="icon-bar bottom-bar"></span>
     </button>
 
-    <div class="text-right collapse navbar-collapse" id="navbarDropdown">
+    <div class="text-right collapse navbar-collapse px-0" id="navbarDropdown">
       <?php
         wp_nav_menu( array(
           'theme_location'  => 'navbar',

@@ -31,8 +31,10 @@
   }
   .navbar-nav {
     > li.nav-item {
-       > a.nav-link,
-      > a.nav-link:focus {
+      > a.nav-link,
+      a.dropdown-item,
+      > a.nav-link:focus,
+      a.dropdown-item:focus {
         font-size: .9rem;
         font-weight: 700;
         text-transform: uppercase;
@@ -40,7 +42,7 @@
         &:hover {
           color: $primary;
         }
-        &.active {
+        &:active {
           color: $primary !important;
           background-color: transparent;
           &:hover {
@@ -63,6 +65,9 @@
     }
     .navbar-nav > li.nav-item > a.nav-link {
       padding: 0.5rem 1rem;
+      &:last-child {
+        padding-right: 0;
+      }
     }
     // .navbar-nav > li.nav-item > a.nav-link,
     // .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -92,3 +97,77 @@
     }
   }
 }
+/* put toggle bars on the left :: not using button */
+#mainNav .navbar-toggler {
+  width: 23px;
+  height: 23px;
+  border: none;
+  @include transition(all 0.5s linear);
+  &:focus,
+  &:hover {
+  outline: none;
+    .icon-bar {
+      background-color: $primary;
+    }
+  }
+}
+/* icon bar prettyup - optional */
+#mainNav .navbar-toggler > .icon-bar {
+  width: 100%;
+  display: block;
+  height: 1px;
+  background-color: $black;
+  @include transition(all 0.5s ease);
+}
+#mainNav .navbar-toggler.collapsed {
+  .icon-bar {
+    position: relative;
+    &.top-bar {
+      transform: rotate(0deg) translateY(-6px);
+    }
+    &.middle-bar {
+      transform: rotate(0deg) translateY(0px);
+    }
+    &.bottom-bar {
+      transform: rotate(0deg) translateY(6px);
+    }
+  }
+  &:focus,
+  &:hover {
+  outline: none;
+    .icon-bar {
+      background-color: $tertiary;
+    }
+  }
+}
+.icon-bar {
+  position: relative;
+  background-color: $primary;
+  &.top-bar {
+    transform: rotate(315deg) translateY(1px);
+  }
+  &.middle-bar {
+    transform: rotate(0deg) translateX(1000px);
+  }
+  &.bottom-bar {
+    transform: rotate(-135deg) translateY(1px);
+  }
+}
+/* @media (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 105px;
+    right: 0;
+    min-width: 33.33%;
+    height: 100vh;
+    background: white;
+    &.collapsing {
+      right: -100%;
+      @include transition(right 0.5s ease-in);
+    }
+    &.show {
+      right: 0;
+      @include transition(right 0.5s ease-in);
+    }
+  }
+} */

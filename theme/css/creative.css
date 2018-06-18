@@ -254,7 +254,9 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
-#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+#mainNav .navbar-nav > li.nav-item a.dropdown-item,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus,
+#mainNav .navbar-nav > li.nav-item a.dropdown-item:focus {
   font-size: .9rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -262,18 +264,24 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
-#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+#mainNav .navbar-nav > li.nav-item a.dropdown-item:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover,
+#mainNav .navbar-nav > li.nav-item a.dropdown-item:focus:hover {
   color: #be1522;
 }
 
-#mainNav .navbar-nav > li.nav-item > a.nav-link.active,
-#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+#mainNav .navbar-nav > li.nav-item > a.nav-link:active,
+#mainNav .navbar-nav > li.nav-item a.dropdown-item:active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:active,
+#mainNav .navbar-nav > li.nav-item a.dropdown-item:focus:active {
   color: #be1522 !important;
   background-color: transparent;
 }
 
-#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
-#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
+#mainNav .navbar-nav > li.nav-item > a.nav-link:active:hover,
+#mainNav .navbar-nav > li.nav-item a.dropdown-item:active:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:active:hover,
+#mainNav .navbar-nav > li.nav-item a.dropdown-item:focus:active:hover {
   background-color: transparent;
 }
 
@@ -289,6 +297,9 @@ img::-moz-selection {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
     padding: 0.5rem 1rem;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:last-child {
+    padding-right: 0;
   }
   #mainNav.navbar-shrink {
     border-bottom: 1px solid rgba(33, 37, 41, 0.1);
@@ -311,6 +322,96 @@ img::-moz-selection {
   }
 }
 
+/* put toggle bars on the left :: not using button */
+#mainNav .navbar-toggler {
+  width: 23px;
+  height: 23px;
+  border: none;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+#mainNav .navbar-toggler:focus, #mainNav .navbar-toggler:hover {
+  outline: none;
+}
+
+#mainNav .navbar-toggler:focus .icon-bar, #mainNav .navbar-toggler:hover .icon-bar {
+  background-color: #be1522;
+}
+
+/* icon bar prettyup - optional */
+#mainNav .navbar-toggler > .icon-bar {
+  width: 100%;
+  display: block;
+  height: 1px;
+  background-color: #000;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#mainNav .navbar-toggler.collapsed .icon-bar {
+  position: relative;
+}
+
+#mainNav .navbar-toggler.collapsed .icon-bar.top-bar {
+  transform: rotate(0deg) translateY(-6px);
+}
+
+#mainNav .navbar-toggler.collapsed .icon-bar.middle-bar {
+  transform: rotate(0deg) translateY(0px);
+}
+
+#mainNav .navbar-toggler.collapsed .icon-bar.bottom-bar {
+  transform: rotate(0deg) translateY(6px);
+}
+
+#mainNav .navbar-toggler.collapsed:focus, #mainNav .navbar-toggler.collapsed:hover {
+  outline: none;
+}
+
+#mainNav .navbar-toggler.collapsed:focus .icon-bar, #mainNav .navbar-toggler.collapsed:hover .icon-bar {
+  background-color: #a4c03e;
+}
+
+.icon-bar {
+  position: relative;
+  background-color: #be1522;
+}
+
+.icon-bar.top-bar {
+  transform: rotate(315deg) translateY(1px);
+}
+
+.icon-bar.middle-bar {
+  transform: rotate(0deg) translateX(1000px);
+}
+
+.icon-bar.bottom-bar {
+  transform: rotate(-135deg) translateY(1px);
+}
+
+/* @media (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 105px;
+    right: 0;
+    min-width: 33.33%;
+    height: 100vh;
+    background: white;
+    &.collapsing {
+      right: -100%;
+      @include transition(right 0.5s ease-in);
+    }
+    &.show {
+      right: 0;
+      @include transition(right 0.5s ease-in);
+    }
+  }
+} */
 .featured-background {
   background-color: #a4c03e;
   -webkit-filter: blur(1px);
@@ -371,78 +472,6 @@ img::-moz-selection {
   }
 }
 
-/* put toggle bars on the left :: not using button */
-#mainNav .navbar-toggler {
-  width: 50px;
-  height: 50px;
-  border: none;
-  -moz-transition: all 0.5s linear;
-  -o-transition: all 0.5s linear;
-  -webkit-transition: all 0.5s linear;
-  transition: all 0.5s linear;
-}
-
-#mainNav .navbar-toggler:focus, #mainNav .navbar-toggler:hover {
-  outline: none;
-}
-
-#mainNav .navbar-toggler:focus .icon-bar, #mainNav .navbar-toggler:hover .icon-bar {
-  background-color: #be1522;
-}
-
-/* icon bar prettyup - optional */
-#mainNav .navbar-toggler > .icon-bar {
-  width: 90%;
-  display: block;
-  height: 1px;
-  background-color: #000;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-#mainNav .navbar-toggler.collapsed .icon-bar {
-  position: relative;
-}
-
-#mainNav .navbar-toggler.collapsed .icon-bar.top-bar {
-  transform: rotate(0deg) translateY(-6px);
-}
-
-#mainNav .navbar-toggler.collapsed .icon-bar.middle-bar {
-  transform: rotate(0deg) translateY(0px);
-}
-
-#mainNav .navbar-toggler.collapsed .icon-bar.bottom-bar {
-  transform: rotate(0deg) translateY(6px);
-}
-
-#mainNav .navbar-toggler.collapsed:focus, #mainNav .navbar-toggler.collapsed:hover {
-  outline: none;
-}
-
-#mainNav .navbar-toggler.collapsed:focus .icon-bar, #mainNav .navbar-toggler.collapsed:hover .icon-bar {
-  background-color: #a4c03e;
-}
-
-.icon-bar {
-  position: relative;
-  background-color: #be1522;
-}
-
-.icon-bar.top-bar {
-  transform: rotate(315deg) translateY(1px);
-}
-
-.icon-bar.middle-bar {
-  transform: rotate(0deg) translateX(1000px);
-}
-
-.icon-bar.bottom-bar {
-  transform: rotate(-135deg) translateY(1px);
-}
-
 #sub-page {
   display: block;
   font-size: 0.0625rem;
@@ -474,6 +503,10 @@ img::-moz-selection {
   -ms-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   -o-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card .row [class^='col'] h2 {
+  hyphens: auto;
 }
 
 body {

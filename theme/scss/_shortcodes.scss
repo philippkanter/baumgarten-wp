@@ -2,6 +2,9 @@
 .card {
     @include shadow();
 }
+.card .row [class^='col'] h2 {
+    hyphens: auto;
+}
 body {
     background-color: fade-out($tertiary, .4);
   }
