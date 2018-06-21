@@ -35,7 +35,7 @@ img.featured-image {
 	.card-deck {
 	    display: block;
     }
-    .card-link {
+    .card-link.btn {
         display: block;
     }
 }
@@ -48,7 +48,7 @@ img.featured-image {
     .card-link+.card-link {
         margin-left: 0;
     }
-    .card-link {
+    .card-link.btn {
         display: block;
     }
 }

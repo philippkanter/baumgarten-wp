@@ -165,6 +165,10 @@ h6 {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 
+.h2, h2 {
+  font-size: 1.8rem;
+}
+
 .kicker {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
