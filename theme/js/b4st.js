@@ -32,9 +32,6 @@
 			var image = new Image();
 
 			$(image).load(function () {
-
-				alert('TEST');
-
 				$(element).attr('src', bigImage);
 				$(element).addClass('darken');
 				$(element).removeClass('blur-darken');
