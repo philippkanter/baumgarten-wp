@@ -149,6 +149,8 @@ a {
   color: #be1522;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 
@@ -173,6 +175,46 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   text-transform: uppercase;
   color: #6c757d;
+}
+
+.blur {
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -ms-filter: blur(1px);
+  -o-filter: blur(1px);
+  filter: blur(1px);
+}
+
+.unblur {
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -ms-filter: blur(0px);
+  -o-filter: blur(0px);
+  filter: blur(0px);
+}
+
+.blur-darken {
+  -webkit-filter: blur(1px) brightness(0.5);
+  -moz-filter: blur(1px) brightness(0.5);
+  -ms-filter: blur(1px) brightness(0.5);
+  -o-filter: blur(1px) brightness(0.5);
+  filter: blur(1px) brightness(0.5);
+}
+
+.blur-darken-light {
+  -webkit-filter: blur(1px) brightness(0.8);
+  -moz-filter: blur(1px) brightness(0.8);
+  -ms-filter: blur(1px) brightness(0.8);
+  -o-filter: blur(1px) brightness(0.8);
+  filter: blur(1px) brightness(0.8);
+}
+
+.darken {
+  -webkit-filter: brightness(0.5);
+  -moz-filter: brightness(0.5);
+  -ms-filter: brightness(0.5);
+  -o-filter: brightness(0.5);
+  filter: brightness(0.5);
 }
 
 .bg-primary {

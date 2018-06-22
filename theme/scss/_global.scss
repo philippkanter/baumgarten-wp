@@ -39,6 +39,21 @@ h6 {
   text-transform: uppercase;
   color: $secondary;
 }
+.blur {
+    @include blur();
+}
+.unblur {
+    @include blur(0px);
+}
+.blur-darken {
+  @include blur-darken();
+}
+.blur-darken-light {
+  @include blur-darken(1px, .80);
+}
+.darken {
+  @include darken();
+}
 .bg-primary {
   background-color: $primary !important;
 }

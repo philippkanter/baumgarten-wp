@@ -1,11 +1,30 @@
 // Mixins
-@mixin darken($brightness) {
+@mixin darken($brightness: .5) {
   -webkit-filter: brightness($brightness);
+  -moz-filter: brightness($brightness);
+  -ms-filter: brightness($brightness);
+  -o-filter: brightness($brightness);
   filter: brightness($brightness);
+}
+@mixin blur($radius: 1px) {
+  -webkit-filter: blur($radius);
+  -moz-filter: blur($radius);
+  -ms-filter: blur($radius);
+  -o-filter: blur($radius);
+  filter: blur($radius);
+}
+@mixin blur-darken($radius: 1px, $brightness: .5) {
+  -webkit-filter: blur($radius) brightness($brightness);
+  -moz-filter: blur($radius) brightness($brightness);
+  -ms-filter: blur($radius) brightness($brightness);
+  -o-filter: blur($radius) brightness($brightness);
+  filter: blur($radius) brightness($brightness);
 }
 @mixin transition-all() {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 // @mixin transition($property, $duration, $function) {
@@ -63,13 +82,6 @@
   -o-transition: box-shadow .28s cubic-bezier(.4,0,.2,1);
   transition: box-shadow .28s cubic-bezier(.4,0,.2,1);
   transition: box-shadow .28s cubic-bezier(.4,0,.2,1),-webkit-box-shadow .28s cubic-bezier(.4,0,.2,1);
-}
-@mixin blur($radius) {
-  -webkit-filter: blur($radius);
-  -moz-filter: blur($radius);
-  -ms-filter: blur($radius);
-  -o-filter: blur($radius);
-  filter: blur($radius);
 }
 @mixin blur-performance-fix() {
   -webkit-backface-visibility: hidden;

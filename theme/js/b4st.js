@@ -27,12 +27,22 @@
 			$('.navbar-collapse').collapse('hide');
 		});
 	
-		$('.lazyload').each(function(index, element){
-			var bigImage = $(this).data('big-image'),
-			image = new Image();
+		$('.lazyload').each(function (index, element) {
+			var bigImage = $(this).data('big-image');
+			var image = new Image();
+
+			$(image).load(function () {
+
+				alert('TEST');
+
+				$(element).attr('src', bigImage);
+				$(element).addClass('darken');
+				$(element).removeClass('blur-darken');
+
+			});
+
 			image.src = bigImage;
-			$(element).attr('src', bigImage);
-			$(element).addClass('unblur');
+
 		});
 
 	});
