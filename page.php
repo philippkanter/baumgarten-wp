@@ -13,10 +13,10 @@
 <?php if ( is_front_page() ) : ?><!-- Startseite -->
   <?php if(have_posts()): while(have_posts()): the_post(); ?>
     <article id="post_<?php the_ID()?>" <?php post_class()?>>
-      <header class="text-center text-white d-flex">
+      <header class="text-center text-white d-flex dunkel">
         <?php $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
         <div 
-          class="featured-background front-page blur-darken-light" 
+          class="featured-background front-page darken-light" 
           style="background:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.4)),url('<?php echo $thumb['0'];?>');background-size:cover;">
         </div>
         <main class="container my-auto">

@@ -9,7 +9,7 @@ function thumbnail_in_content($atts) {
     $bigImage = get_the_post_thumbnail_url( $post->ID, $size = 'custom-size');
 
     return get_the_post_thumbnail( $post->ID, $size = 'custom-thumb', array( 
-        'class' => 'lazyload featured-image blur-darken', 
+        'class' => 'lazyload featured-image blur-darken-light', 
         'data-big-image' => $bigImage ) 
     );
 }

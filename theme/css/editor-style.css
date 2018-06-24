@@ -202,19 +202,27 @@ h6 {
 }
 
 .blur-darken-light {
-  -webkit-filter: blur(1px) brightness(0.8);
-  -moz-filter: blur(1px) brightness(0.8);
-  -ms-filter: blur(1px) brightness(0.8);
-  -o-filter: blur(1px) brightness(0.8);
-  filter: blur(1px) brightness(0.8);
+  -webkit-filter: blur(1px) brightness(0.9);
+  -moz-filter: blur(1px) brightness(0.9);
+  -ms-filter: blur(1px) brightness(0.9);
+  -o-filter: blur(1px) brightness(0.9);
+  filter: blur(1px) brightness(0.9);
 }
 
-.darken {
+.dunkel .darken {
   -webkit-filter: brightness(0.5);
   -moz-filter: brightness(0.5);
   -ms-filter: brightness(0.5);
   -o-filter: brightness(0.5);
   filter: brightness(0.5);
+}
+
+.dunkel .darken-light {
+  -webkit-filter: brightness(0.9);
+  -moz-filter: brightness(0.9);
+  -ms-filter: brightness(0.9);
+  -o-filter: brightness(0.9);
+  filter: brightness(0.9);
 }
 
 .bg-primary {
@@ -270,6 +278,11 @@ img::-moz-selection {
 
 .border-3 {
   border-width: 3px !important;
+}
+
+.full-width .btn-xl {
+  width: 85%;
+  font-size: 1.5rem;
 }
 
 .btn {

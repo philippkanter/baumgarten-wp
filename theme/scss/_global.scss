@@ -49,10 +49,13 @@ h6 {
   @include blur-darken();
 }
 .blur-darken-light {
-  @include blur-darken(1px, .80);
+  @include blur-darken(1px, .9);
 }
-.darken {
+.dunkel .darken {
   @include darken();
+}
+.dunkel .darken-light {
+  @include darken(.9);
 }
 .bg-primary {
   background-color: $primary !important;

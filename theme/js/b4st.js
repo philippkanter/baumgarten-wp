@@ -33,8 +33,8 @@
 
 			$(image).load(function () {
 				$(element).attr('src', bigImage);
-				$(element).addClass('darken');
-				$(element).removeClass('blur-darken');
+				$(element).addClass('darken-light');
+				$(element).removeClass('blur-darken-light');
 
 			});
 
