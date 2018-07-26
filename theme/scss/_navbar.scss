@@ -4,13 +4,25 @@
   background-color: $white;
   @include sans-serif-font;
   @include transition(all 0.5s linear);
-  &::after {
-    content: '';
-    border-bottom: 2px solid $tertiary;
-    width: 100%;
-    position: absolute;
-    bottom: -1px;
-    left: 0;
+  @media (min-width: 992px) {
+    &::after {
+      content: '';
+      border-bottom: 2px solid $tertiary;
+      width: 100%;
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+    }
+  }
+  @media (max-width: 991px) {
+    &::before {
+      content: '';
+      border-bottom: 2px solid $tertiary;
+      width: 100%;
+      position: relative;
+      top: 97px;
+      left: 0;
+    }
   }
   .navbar-brand {
     font-weight: 700;
