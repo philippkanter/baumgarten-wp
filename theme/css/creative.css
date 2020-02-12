@@ -569,6 +569,10 @@ body {
   background-color: rgba(164, 192, 62, 0.6);
 }
 
+.image-first {
+  margin-top: -3em;
+}
+
 .text-on-image-center {
   position: absolute;
   top: 50%;
