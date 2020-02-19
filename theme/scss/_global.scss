@@ -44,6 +44,11 @@ h6 {
   @include sans-serif-font;
   text-transform: uppercase;
   color: $secondary;
+  a {
+    &.card-link {
+        margin-left: 0;
+    }
+}
 }
 .blur {
     @include blur();

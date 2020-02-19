@@ -187,6 +187,10 @@ h6 {
   color: #6c757d;
 }
 
+.kicker a.card-link {
+  margin-left: 0;
+}
+
 .blur {
   -webkit-filter: blur(1px);
   -moz-filter: blur(1px);

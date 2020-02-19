@@ -186,6 +186,10 @@ h6 {
   color: #6c757d;
 }
 
+.kicker a.card-link {
+  margin-left: 0;
+}
+
 .blur {
   -webkit-filter: blur(1px);
   -moz-filter: blur(1px);
@@ -606,6 +610,11 @@ img.featured-image {
   margin-bottom: 30px !important;
 }
 
+/* Adjust links in data protection page */
+body.page-id-3710 .card-link + .card-link {
+  margin-left: 0;
+}
+
 /* Set width to make card deck cards 100% width */
 @media (max-width: 575px) {
   .card-link + .card-link {
@@ -632,14 +641,6 @@ img.featured-image {
   .card-link.btn {
     display: block;
   }
-}
-
-.kicker a.card-link {
-  margin-left: 0;
-}
-
-.card-text:has(> a.anchor) {
-  margin-bottom: 0;
 }
 
 .wpcf7-acceptance {
