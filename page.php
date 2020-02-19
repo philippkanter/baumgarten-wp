@@ -30,7 +30,7 @@
             <div class="col-lg-9 mx-auto">
               <?php the_content()?>
               <div class="mt-5">
-                <a class="btn btn-primary btn-xl js-scroll-trigger" href="./kalligrafie/">Kalligrafie</a>
+                <a class="btn btn-primary btn-xl js-scroll-trigger" href="./ferienwohnung/">Ferienwohnung</a>
               </div>
             </div>
           </div>

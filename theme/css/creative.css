@@ -6,7 +6,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -159,6 +158,13 @@ a {
 
 a:hover {
   color: #be1522;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -200px;
+  visibility: hidden;
 }
 
 h1,
@@ -458,7 +464,6 @@ img::-moz-selection {
 
 @media (max-width: 991px) {
   .navbar-collapse.collapsing .navbar-nav, .navbar-collapse.show .navbar-nav {
-    min-height: calc(100vh - 135px);
     height: 100%;
   }
   .navbar-collapse.collapsing .dropdown-menu.show, .navbar-collapse.show .dropdown-menu.show {
@@ -507,7 +512,6 @@ img::-moz-selection {
 
 @media (min-width: 768px) {
   .home header {
-    height: calc(100vh - 130px);
     min-height: 600px;
   }
   .home header p {
@@ -628,6 +632,14 @@ img.featured-image {
   .card-link.btn {
     display: block;
   }
+}
+
+.kicker a.card-link {
+  margin-left: 0;
+}
+
+.card-text:has(> a.anchor) {
+  margin-bottom: 0;
 }
 
 .wpcf7-acceptance {

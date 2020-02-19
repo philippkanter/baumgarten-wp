@@ -60,3 +60,10 @@ img.featured-image {
         display: block;
     }
 }
+.kicker {
+    a {
+        &.card-link {
+            margin-left: 0;
+        }
+    }
+}

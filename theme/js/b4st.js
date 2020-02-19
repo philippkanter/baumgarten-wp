@@ -8,6 +8,9 @@
 
 	$(document).ready(function() {
 
+		$( ".card-text" ).has( ".anchor" ).addClass( "mb-0" );
+
+
 		// Comments
 
 		$('.commentlist li').addClass('card');

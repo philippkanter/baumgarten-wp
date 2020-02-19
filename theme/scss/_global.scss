@@ -22,6 +22,12 @@ a {
   &:hover {
     color: darken($primary, .1);
   }
+  &.anchor {
+    display: block;
+    position: relative;
+    top: -200px;
+    visibility: hidden;
+  }
 }
 h1,
 h2,

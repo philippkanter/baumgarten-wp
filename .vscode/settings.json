@@ -29,6 +29,8 @@
                 },
                 
                 "deployOnSave": [ "baumgarten" ],
+                "deployOnChange": [ "baumgarten" ],
+                "fastCheckOnChange": true,
                 "fastCheckOnSave": true,
 
                 "files": [
